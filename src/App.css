@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-gradient-to-r from-purple-900 to-gray-900 text-gray-900 min-h-screen;
+}
+
+@keyframes colorShift {
+  0%, 100% { color: white; }
+  25% { color: #60a5fa; }
+  50% { color: #34d399; }
+  75% { color: #fbbf24; }
+}
+
+.animate-color-shift {
+  animation: colorShift 5s infinite ease-in-out;
+}
+
+
+/* ⬇️ Tambahan untuk animasi brand sponsor */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.animate-slide-left-right {
+  animation: 'slide-left-right 1s ease-in-out infinite',
+}
